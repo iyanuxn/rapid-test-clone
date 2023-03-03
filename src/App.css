@@ -1,0 +1,220 @@
+.appHeader {
+  background: url(../src/assets/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #6F38C5;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1vh 0 1vh 0;
+}
+
+.submit-lg {
+  display: none;
+}
+
+.appBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh 0 1vh 0;
+  font-weight: 500;
+}
+
+.submit-lg {
+  display: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-height: 45vh;
+  width: 90%;
+  margin: 3vh 0 3vh 0;
+  padding: 3vh 3vh 0 3vh;
+}
+
+.cardHeader {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBody {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cardOption {
+  font-weight: bolder;
+  background-color: #fff;
+  border: 3px solid #5B2E9E;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #5B2E9E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+}
+
+.optionClicked {
+  font-weight: bolder;
+  background-color: #5B2E9E;
+  color: #fff;
+  border: 3px solid #5B2E9E;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.cardOption:hover {
+  font-weight: bolder;
+  background-color: #5B2E9E;
+  color: #fff;
+  border: 3px solid #5B2E9E;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.questionNumber {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.4rem 1rem;
+  grid-area: auto;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.question {
+  background-color: #ffffff;
+  border: 3px solid #5B2E9E;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: #5B2E9E;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+}
+
+.questionClicked {
+  background-color: #5B2E9E;
+  color: #ffffff;
+  border: 3px solid #5B2E9E;
+}
+
+.appFooter {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 3vh;
+}
+
+.submitButton {
+  background-color: #fff;
+  color: #5B2E9E;
+  border: 3px solid #5B2E9E;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem 0 1rem 0;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #5B2E9E;
+  color: #fff;
+  border: 3px solid #5B2E9E;
+  transition: all 200ms ease;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-height: 45vh;
+  width: 90%;
+  margin: 3vh 0 3vh 0;
+  padding: 3vh 3vh 0 3vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+  .card {
+    padding: 10vh;
+    width: 70%;
+  }
+
+  .cardHeader {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cardBody {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cardOption {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .questionNumber {
+    font-size: 1.2rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-gap: 4rem 0rem;
+    width: 70%;
+  }
+
+  .appFooter {
+    display: none;
+  }
+
+  .appHeader {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .submit-lg {
+    display: flex;
+  }
+
+  .modal {
+    padding: 10vh;
+  }
+
+  .modal img {
+    width: 30%;
+    height: 30%;
+  }
+
+}
